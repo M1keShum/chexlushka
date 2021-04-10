@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Chexlushka</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="{% url 'main'%}" id="name"><div class="name">Chexlushka</div></a>
+<a class="links" href="1/">Чехлы</a><a class="links" href="2/">Ремешки</a>
+<br>
+<a href="1/"><img height="200px" width="200px" src="../static/cases.jpg"></a>
+<a href="2/"><img height="200px" width="200px" src="../static/belts.jpg"></a>
+
+<!--<div class="text">-->
+<!--    {% for rub in rubs %}-->
+<!--    <h3 class="str"><a href="../{{ rub.id }}">{{ rub }}</a></h3>-->
+<!--    {% endfor %}-->
+<!--<h1>Список товаров:</h1>-->
+<!--{% for prod in prods %}-->
+<!--    <fieldset>-->
+<!--    <legend class="prodname">{{ prod.name }}</legend>-->
+<!--    <div class="cont">{{ prod.content }}</div>-->
+<!--    <div class="price">{{ prod.price|floatformat }} руб.</div>-->
+<!--    <div class="rub"><a href="{{ prod.rubric.id }}/">{{ prod.rubric }}</a></div>-->
+<!--    </fieldset>-->
+
+<!--{% endfor %}-->
+<!--    </div>-->
+
+<h3 class="about"><hr>О компании: <br>Хозяин- Саша, Сайт сделал- Миша)</h3>
+</body>
+</html>

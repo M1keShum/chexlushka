@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Chexlushka: {{ rub }}</title>
+        {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="{% url 'main'%}" id="name"><div class="name">Chexlushka</div></a>
+<div class="text">
+        {% for r in rubs %}
+    <h3 class="str"><a id="str" href="../{{ r.id }}">{{ r }}</a></h3>
+    {% endfor %}
+<h1>Товары из рубрики "{{ rub }}":</h1>
+{% for prod in prods %}
+    <fieldset>
+    <legend class="prodname">{{ prod.name }}</legend>
+    <div class="cont">{{ prod.content }}</div>
+    <div class="price">{{ prod.price|floatformat }} руб.</div>
+    <div class="rub"><a href="../{{ prod.rubric.id }}/">{{ prod.rubric }}</a></div>
+    </fieldset>
+
+{% endfor %}
+    </div>
+</body>
+</html>

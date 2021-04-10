@@ -1,0 +1,123 @@
+.name{
+    font-size: 50px;
+    background-color: #eb36f5;
+    text-align: center;
+    height: 100px;
+    line-height: 85px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.text{
+	margin: 20px;
+}
+
+
+body{
+	margin: 0px;
+	background-color: #e6cfd8;
+}
+
+fieldset{
+	margin-top: 20px;
+	background-color: white;
+	width: 200px;
+	display: inline;
+	height: 200px;
+	margin-right: 20px;
+}
+
+legend{
+	background-color: white;
+	text-align: center;
+}
+
+.prodname{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.cont{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.price{
+	text-align: right;
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.rub{
+	font-size: 18px;
+	text-align: right;
+	font-style: italic;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.str{
+	display: inline-block;
+	margin-left: 350px;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+#str{
+	color: #9922f5 !important;
+}
+
+a:visited {
+	color: #0000ff;
+}
+
+a#name{
+	color: black;
+}
+
+a#name:visited{
+	color: black;
+}
+
+a{
+	text-decoration: none;
+}
+
+h3.str{
+	margin-right: 10px;
+ 	display: inline;
+	}
+
+
+a img{
+	margin-top: 5px;
+	height: 400px;
+	width: 400px;
+	margin-left: 180px;
+}
+
+
+.links{
+	color: black !important;
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 50px;
+	margin-left: 310px;
+	margin-right: 120px;
+}
+
+
+.about{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+
+
+
